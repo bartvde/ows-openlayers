@@ -1,0 +1,37 @@
+{
+  "name": "ows-openlayers",
+  "version": "1.0.0",
+  "description": "Using OpenLayers 3 with ows.js / JSONIX for WMS GetCapabilities parsing",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify index.js --outfile bundle.js",
+    "build-uncompressed": "browserify index.js --outfile bundle.js",
+    "build": "browserify index.js | uglifyjs --compress --output bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bartvde/ows-openlayers.git"
+  },
+  "keywords": [
+    "JSONIX",
+    "OGC",
+    "WMS",
+    "Capabilities",
+    "OpenLayers"
+  ],
+  "author": "Bart van den Eijnden",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/bartvde/ows-openlayers/issues"
+  },
+  "homepage": "https://github.com/bartvde/ows-openlayers",
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "jsonix": "^2.2.1",
+    "ogc-schemas": "^2.2.0",
+    "openlayers": "^3.4.0",
+    "uglify-js": "^2.4.20",
+    "w3c-schemas": "^1.1.0",
+    "watchify": "^3.1.1"
+  }
+}
